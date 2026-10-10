@@ -46,37 +46,29 @@ const art = {
 };
 
 const products = [
-  { id: "cap", cat: "gorras", name: "Gorra AJ89", price: 35, tag: "Nuevo", word: "Lagos", art: "cap",
-    story: "Ajegunle, 1989. El barrio donde empezó todo, bordado en la frente.",
-    colors: [["Negro", "#16181a", "#f0b92c", "#e9e4d6"], ["Verde", "#00a35c", "#f2eee4", "#dbeee2"], ["Crema", "#efe7d2", "#00703f", "#e3dccb"]],
+  { id: "cap", cat: "gorras", name: "Gorra AJ89", price: 35, tag: "Nuevo", type: "Gorra · Ajegunle, 1989", art: "cap",
+    colors: [["Negro", "#16181a", "#f0b92c"], ["Verde", "#00a35c", "#f2eee4"], ["Crema", "#efe7d2", "#00703f"]],
     sizes: ["Única"] },
-  { id: "tee-gold", cat: "ropa", name: "Camiseta Bota de Oro", price: 45, tag: "AFCON 2019", word: "Egipto", art: "tee", args: ["BOTA DE ORO", "5"],
-    story: "Cinco goles y máximo goleador de la Copa África 2019.",
-    colors: [["Oro", "#f0b92c", "#16181a", "#f6ecd0"], ["Negro", "#16181a", "#f0b92c", "#e9e4d6"]],
+  { id: "tee-gold", cat: "ropa", name: "Camiseta Bota de Oro", price: 45, tag: "AFCON 2019", type: "Camiseta · Copa África 2019", art: "tee", args: ["BOTA DE ORO", "5"],
+    colors: [["Oro", "#f0b92c", "#16181a"], ["Negro", "#16181a", "#f0b92c"]],
     sizes: ["S", "M", "L", "XL"] },
-  { id: "tee-eagle", cat: "ropa", name: "Camiseta Super Eagle", price: 49, word: "Naija", art: "tee", args: ["IGHALO", "16"],
-    story: "El verde de Nigeria: 37 partidos y 16 goles con su selección.",
-    colors: [["Verde", "#00a35c", "#f2eee4", "#dbeee2"], ["Blanco", "#fbfaf6", "#00703f", "#e9e4d6"]],
+  { id: "tee-eagle", cat: "ropa", name: "Camiseta Super Eagle", price: 49, type: "Camiseta · Selección de Nigeria", art: "tee", args: ["IGHALO", "16"],
+    colors: [["Verde", "#00a35c", "#f2eee4"], ["Blanco", "#fbfaf6", "#00703f"]],
     sizes: ["S", "M", "L", "XL"] },
-  { id: "hoodie", cat: "ropa", name: "Sudadera 7 Países", price: 69, tag: "Top ventas", word: "Ruta", art: "hoodie",
-    story: "Nigeria, Noruega, Italia, España, Inglaterra, China y Arabia Saudí, impresos en la espalda.",
-    colors: [["Negro", "#16181a", "#f2eee4", "#e9e4d6"], ["Arena", "#d8ccb0", "#16181a", "#ede6d6"], ["Verde", "#00703f", "#f0b92c", "#d6e8dc"]],
+  { id: "hoodie", cat: "ropa", name: "Sudadera 7 Países", price: 69, tag: "Top ventas", type: "Sudadera · Los 7 países", art: "hoodie",
+    colors: [["Negro", "#16181a", "#f2eee4"], ["Arena", "#d8ccb0", "#16181a"], ["Verde", "#00703f", "#f0b92c"]],
     sizes: ["S", "M", "L", "XL"] },
-  { id: "bucket", cat: "gorras", name: "Bucket Lyn '07", price: 32, word: "Oslo", art: "bucket",
-    story: "Oslo, 2007. Debutó a los 18 años y marcó ese mismo día.",
-    colors: [["Crema", "#efe7d2", "#00703f", "#e3dccb"], ["Negro", "#16181a", "#00a35c", "#e9e4d6"]],
+  { id: "bucket", cat: "gorras", name: "Bucket Lyn '07", price: 32, type: "Bucket · Su debut en Lyn", art: "bucket",
+    colors: [["Crema", "#efe7d2", "#00703f"], ["Negro", "#16181a", "#00a35c"]],
     sizes: ["S/M", "L/XL"] },
-  { id: "scarf", cat: "accesorios", name: "Bufanda Naija", price: 25, word: "Watford", art: "scarf",
-    story: "Para el frío de Watford, donde marcó 15 goles en su primera Premier.",
-    colors: [["Verde", "#00a35c", "#f2eee4", "#dbeee2"], ["Negro", "#16181a", "#f0b92c", "#e9e4d6"]],
+  { id: "scarf", cat: "accesorios", name: "Bufanda Naija", price: 25, type: "Bufanda · Invierno en Watford", art: "scarf",
+    colors: [["Verde", "#00a35c", "#f2eee4"], ["Negro", "#16181a", "#f0b92c"]],
     sizes: ["Única"] },
-  { id: "socks", cat: "accesorios", name: "Calcetines 24", price: 15, word: "Riad", art: "socks",
-    story: "24 goles y pichichi de la liga saudí 2021-22 con Al Hilal.",
-    colors: [["Blanco", "#fbfaf6", "#00a35c", "#e9e4d6"], ["Oro", "#f0b92c", "#16181a", "#f6ecd0"]],
+  { id: "socks", cat: "accesorios", name: "Calcetines 24", price: 15, type: "Calcetines · Pichichi en Arabia", art: "socks",
+    colors: [["Blanco", "#fbfaf6", "#00a35c"], ["Oro", "#f0b92c", "#16181a"]],
     sizes: ["39-42", "43-46"] },
-  { id: "print", cat: "accesorios", name: "Lámina La Ruta", price: 22, tag: "Edición limitada", word: "Mapa", art: "print",
-    story: "Su carrera dibujada en una lámina de 50×70 cm, de Lagos a La Meca.",
-    colors: [["Crema", "#f6f1e4", "#00703f", "#e3dccb"], ["Noche", "#16181a", "#f0b92c", "#d9d4c6"]],
+  { id: "print", cat: "accesorios", name: "Lámina La Ruta", price: 22, tag: "Edición limitada", type: "Lámina 50×70 · La ruta del gol", art: "print",
+    colors: [["Crema", "#f6f1e4", "#00703f"], ["Noche", "#16181a", "#f0b92c"]],
     sizes: ["50×70"] },
 ];
 
@@ -110,19 +102,19 @@ const productsEl = $("[data-products]");
 const svg = (p, col) => `<svg viewBox="0 0 200 200" aria-hidden="true">${art[p.art](col[1], col[2], ...(p.args || []))}</svg>`;
 
 productsEl.innerHTML = products.map((p) => `
-  <article class="product reveal" data-id="${p.id}" data-cat="${p.cat}">
-    <div class="product__stage" data-word="${p.word}" style="--stage:${p.colors[0][3]}">
-      ${p.tag ? `<span class="product__tag">${p.tag}</span>` : ""}
-      ${svg(p, p.colors[0])}
-    </div>
+  <article class="product reveal" data-id="${p.id}" data-cat="${p.cat}" data-text="${`${p.name} ${p.type} ${p.cat}`.toLowerCase()}">
+    <div class="product__stage">${svg(p, p.colors[0])}</div>
     <div class="product__body">
-      <div class="product__top"><h3 class="product__name">${p.name}</h3><span class="product__price">${p.price} €</span></div>
-      <p class="product__story">${p.story}</p>
-      <div class="product__opts">
-        <div class="swatches">${p.colors.map((c, i) => `<button class="swatch${i ? "" : " is-active"}" style="--sw:${c[1]}" data-color="${i}" aria-label="${c[0]}"></button>`).join("")}</div>
-        <div class="sizes">${p.sizes.map((s, i) => `<button class="size${i ? "" : " is-active"}" data-size="${s}">${s}</button>`).join("")}</div>
+      ${p.tag ? `<p class="product__tag">${p.tag}</p>` : ""}
+      <h3 class="product__name">${p.name}</h3>
+      <p class="product__cat">${p.type}</p>
+      <p class="product__colors">${p.colors.length} colores</p>
+      <div class="swatches">${p.colors.map((c, i) => `<button class="swatch${i ? "" : " is-active"}" style="--sw:${c[1]}" data-color="${i}" aria-label="${c[0]}"></button>`).join("")}</div>
+      <p class="product__price">${eur(p.price)}</p>
+      <div class="product__buy">
+        ${p.sizes.map((s, i) => `<button class="size${i ? "" : " is-active"}" data-size="${s}">${s}</button>`).join("")}
+        <button class="pill pill--dark product__add">Añadir</button>
       </div>
-      <button class="product__add">Añadir al carrito</button>
     </div>
   </article>`).join("");
 
@@ -135,9 +127,7 @@ productsEl.addEventListener("click", (e) => {
   if (sw) {
     $$(".swatch", card).forEach((b) => b.classList.toggle("is-active", b === sw));
     const col = p.colors[sw.dataset.color];
-    const stage = $(".product__stage", card);
-    stage.style.setProperty("--stage", col[3]);
-    $("svg", stage).outerHTML = svg(p, col);
+    $(".product__stage svg", card).outerHTML = svg(p, col);
     return;
   }
   const sz = e.target.closest(".size");
@@ -148,18 +138,39 @@ productsEl.addEventListener("click", (e) => {
   const add = e.target.closest(".product__add");
   if (add) {
     addToCart(p.id, +$(".swatch.is-active", card).dataset.color, $(".size.is-active", card).dataset.size);
-    add.textContent = "¡Añadido!";
+    add.textContent = "Añadido ✓";
     add.classList.add("is-done");
-    setTimeout(() => { add.textContent = "Añadir al carrito"; add.classList.remove("is-done"); }, 1400);
+    setTimeout(() => { add.textContent = "Añadir"; add.classList.remove("is-done"); }, 1400);
   }
 });
 
-$$("[data-filter]").forEach((chip) => chip.addEventListener("click", () => {
-  $$("[data-filter]").forEach((c) => c.classList.toggle("is-active", c === chip));
+const searchEl = $("[data-search]");
+let filter = "all";
+
+function applyFilter() {
+  const q = searchEl.value.trim().toLowerCase();
+  let shown = 0;
   $$(".product").forEach((card) => {
-    card.classList.toggle("is-hidden", chip.dataset.filter !== "all" && card.dataset.cat !== chip.dataset.filter);
+    const ok = (filter === "all" || card.dataset.cat === filter) && card.dataset.text.includes(q);
+    card.classList.toggle("is-hidden", !ok);
+    if (ok) { shown++; card.classList.add("is-in"); }
   });
-}));
+  $("[data-shown]").textContent = `(${shown})`;
+  $("[data-empty]").hidden = shown > 0;
+}
+
+function setFilter(value) {
+  filter = value;
+  $$("[data-filter]").forEach((c) => c.classList.toggle("is-active", c.dataset.filter === value));
+  applyFilter();
+}
+
+$$("[data-filter]").forEach((chip) => chip.addEventListener("click", () => setFilter(chip.dataset.filter)));
+$$("[data-jump]").forEach((a) => a.addEventListener("click", () => setFilter(a.dataset.jump)));
+searchEl.addEventListener("input", () => {
+  applyFilter();
+  if (searchEl.value.trim()) $("#tienda").scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+});
 
 /* Carrito */
 let cart = [];
@@ -171,7 +182,7 @@ function addToCart(id, color, size) {
   const line = cart.find((l) => l.key === key);
   line ? line.qty++ : cart.push({ key, id, color, size, qty: 1 });
   renderCart(true);
-  toast("Añadido al carrito");
+  toast("Añadido a la cesta");
 }
 
 function renderCart(bump = false) {
@@ -184,7 +195,7 @@ function renderCart(bump = false) {
     const p = products.find((x) => x.id === l.id);
     const col = p.colors[l.color];
     return `<li class="line" data-key="${l.key}">
-      <div class="line__thumb" style="--stage:${col[3]}">${svg(p, col)}</div>
+      <div class="line__thumb">${svg(p, col)}</div>
       <div>
         <div class="line__name">${p.name}</div>
         <div class="line__meta">${col[0]} · ${l.size}</div>
@@ -192,7 +203,7 @@ function renderCart(bump = false) {
       </div>
       <div class="line__price">${eur(p.price * l.qty)}</div>
     </li>`;
-  }).join("") : `<li class="cart__empty">Tu carrito está vacío.<br>La ruta empieza con una gorra.</li>`;
+  }).join("") : `<li class="cart__empty">Tu cesta está vacía.<br>La ruta empieza con una gorra.</li>`;
 
   $("[data-cart-total]").textContent = eur(cart.reduce((s, l) => s + products.find((x) => x.id === l.id).price * l.qty, 0));
   save();
@@ -284,35 +295,22 @@ function count(el) {
   requestAnimationFrame(step);
 }
 
-/* Cursor, parallax y botones magnéticos (solo con ratón) */
-if (matchMedia("(hover: hover)").matches && !reduced) {
-  const cursor = $(".cursor");
-  const title = $("[data-parallax]");
-  const depth = $$("[data-depth]");
-  addEventListener("mousemove", (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-    cursor.classList.add("is-on");
-    const x = e.clientX / innerWidth - .5;
-    const y = e.clientY / innerHeight - .5;
-    title.style.transform = `translate(${x * -30}px, ${y * -20}px)`;
-    depth.forEach((el) => {
-      el.style.setProperty("--px", `${x * el.dataset.depth}px`);
-      el.style.setProperty("--py", `${y * el.dataset.depth}px`);
-    });
-  });
-  $$("a, button").forEach((el) => {
-    el.addEventListener("mouseenter", () => cursor.classList.add("is-big"));
-    el.addEventListener("mouseleave", () => cursor.classList.remove("is-big"));
-  });
-  $$(".magnetic").forEach((el) => {
-    el.addEventListener("mousemove", (e) => {
-      const r = el.getBoundingClientRect();
-      el.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .3}px, ${(e.clientY - r.top - r.height / 2) * .4}px)`;
-    });
-    el.addEventListener("mouseleave", () => { el.style.transform = ""; });
-  });
-}
+/* Avisos rotativos */
+const msgs = $$(".promo__msg");
+let msgIdx = 0;
+if (!reduced) setInterval(() => {
+  const cur = msgs[msgIdx];
+  cur.classList.replace("is-on", "is-out");
+  setTimeout(() => cur.classList.remove("is-out"), 500);
+  msgIdx = (msgIdx + 1) % msgs.length;
+  msgs[msgIdx].classList.add("is-on");
+}, 4000);
 
-const marquee = $(".marquee__track");
-marquee.innerHTML += marquee.innerHTML;
+/* El menú se esconde al bajar y vuelve al subir */
+const nav = $(".nav");
+let lastY = scrollY;
+addEventListener("scroll", () => {
+  const y = scrollY;
+  nav.classList.toggle("is-hidden", y > lastY && y > 300 && !document.body.classList.contains("cart-open"));
+  lastY = y;
+}, { passive: true });

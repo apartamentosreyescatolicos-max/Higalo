@@ -7,128 +7,192 @@
   <meta name="description" content="Odion Jude Ighalo: la colección AJ89 y la ruta de un delantero que marcó en siete países.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor" aria-hidden="true"></div>
-
-  <header class="nav">
-    <a href="#top" class="nav__logo">IGH<span>/</span>ALO</a>
-    <nav class="nav__links">
-      <a href="#tienda">Tienda</a>
-      <a href="#ruta">La ruta</a>
+  <div class="util">
+    <span class="util__mark">AJ89</span>
+    <nav class="util__links">
+      <a href="#pie">Ayuda</a><i>|</i><a href="#ruta">Únete a la ruta</a><i>|</i><a href="#pie">Envíos</a>
     </nav>
-    <button class="nav__cart" data-open-cart aria-label="Abrir carrito">
-      Carrito <span class="nav__count" data-cart-count>0</span>
-    </button>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero__grid" aria-hidden="true"></div>
-    <div class="hero__glow" aria-hidden="true"></div>
-
-    <figure class="hero__photo" data-depth="18">
-      <img src="img/ighalo-retrato.jpg" alt="Odion Ighalo con el dorsal 24 del Watford" width="964" height="1118">
-    </figure>
-    <figure class="hero__polaroid" data-depth="-30">
-      <img src="img/ighalo-celebracion.jpg" alt="Ighalo celebra un gol con la camiseta amarilla del Watford" width="600" height="900" loading="lazy">
-      <figcaption>Watford, 2016</figcaption>
-    </figure>
-    <p class="hero__credit">Fotos: Franziska Empl (<a href="https://commons.wikimedia.org/wiki/File:Odion_Ighalo_24.jpeg" target="_blank" rel="noopener">1</a>, <a href="https://commons.wikimedia.org/wiki/File:160220_Watford_v_Leeds-306_(25146293716).jpg" target="_blank" rel="noopener">2</a>) · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></p>
-
-    <p class="hero__kicker reveal">Odion Jude Ighalo · Delantero · Lagos, 1989</p>
-
-    <h1 class="hero__title" data-parallax>
-      <span class="hero__line"><span class="split">IGHA</span></span>
-      <span class="hero__line hero__line--outline"><span class="split">LO</span><em class="hero__ball" aria-hidden="true"></em></span>
-    </h1>
-
-    <div class="hero__bottom">
-      <p class="hero__lead reveal">Nació en Ajegunle, marcó en <strong>siete países</strong> y fue Bota de Oro de África. Esta es su colección.</p>
-      <div class="hero__ctas reveal">
-        <a href="#tienda" class="btn btn--solid magnetic">Ver colección</a>
-        <a href="#ruta" class="btn btn--ghost magnetic">Su historia ↓</a>
-      </div>
-    </div>
-
-    <div class="badge" aria-hidden="true">
-      <svg viewBox="0 0 200 200">
-        <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-        <text><textPath href="#circle">DE AJEGUNLE AL MUNDO • 204 GOLES • 7 PAÍSES • </textPath></text>
-      </svg>
-      <span class="badge__core">AJ<br>89</span>
-    </div>
-  </section>
-
-  <div class="marquee" aria-label="Clubes de su carrera">
-    <div class="marquee__track">
-      <span>Julius Berger</span><i>✦</i><span>Lyn</span><i>✦</i><span>Udinese</span><i>✦</i><span>Granada</span><i>✦</i><span>Watford</span><i>✦</i><span>Changchun Yatai</span><i>✦</i><span>Shanghai Shenhua</span><i>✦</i><span>Manchester United</span><i>✦</i><span>Al Shabab</span><i>✦</i><span>Al Hilal</span><i>✦</i><span>Al-Wehda</span><i>✦</i>
-    </div>
   </div>
 
-  <!-- CIFRAS -->
-  <section class="stats">
-    <div class="stat reveal"><b data-count="204">0</b><span>goles con clubes</span></div>
-    <div class="stat reveal"><b data-count="473">0</b><span>partidos</span></div>
-    <div class="stat reveal"><b data-count="16">0</b><span>goles con Nigeria</span></div>
-    <div class="stat reveal"><b data-count="7">0</b><span>países, una camiseta por cada uno</span></div>
-  </section>
-
-  <!-- TIENDA -->
-  <section class="shop" id="tienda">
-    <div class="section-head">
-      <p class="eyebrow">Colección AJ89</p>
-      <h2 class="reveal">Viste la ruta.</h2>
-      <p class="section-head__sub reveal">Cada pieza lleva una parada de su carrera. Elige color y talla.</p>
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Inicio">IGH<span>/</span>ALO</a>
+    <nav class="nav__links">
+      <a href="#destacado">Novedades</a>
+      <a href="#tienda" data-jump="gorras">Gorras</a>
+      <a href="#tienda" data-jump="ropa">Ropa</a>
+      <a href="#tienda" data-jump="accesorios">Accesorios</a>
+      <a href="#ruta">La ruta</a>
+    </nav>
+    <div class="nav__tools">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+        <input type="search" placeholder="Buscar" data-search aria-label="Buscar productos">
+      </label>
+      <button class="nav__cart" data-open-cart aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.25 8.25V6a3.75 3.75 0 1 1 7.5 0v2.25M4.5 8.25h15l-1 12h-13z"/></svg>
+        <span class="nav__count" data-cart-count>0</span>
+      </button>
     </div>
+  </header>
 
-    <div class="filters" role="tablist">
-      <button class="chip is-active" data-filter="all">Todo</button>
-      <button class="chip" data-filter="gorras">Gorras</button>
-      <button class="chip" data-filter="ropa">Ropa</button>
-      <button class="chip" data-filter="accesorios">Accesorios</button>
-    </div>
+  <div class="promo" aria-live="polite">
+    <p class="promo__msg is-on">Envío gratis en pedidos de más de 50 €</p>
+    <p class="promo__msg">Colección AJ89 · Edición limitada</p>
+    <p class="promo__msg">Devoluciones gratuitas durante 30 días</p>
+  </div>
 
-    <div class="products" data-products></div>
-  </section>
-
-  <!-- RUTA -->
-  <section class="route" id="ruta">
-    <div class="route__sticky">
-      <div class="route__head">
-        <p class="eyebrow">La ruta del gol</p>
-        <h2>De Ajegunle<br>al mundo.</h2>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <figure class="hero__media">
+        <img src="img/ighalo-hilal.jpg" alt="Ighalo celebra un gol con el Al Hilal señalando al cielo" width="1050" height="722">
+        <figcaption class="hero__credit">Foto: Mohammad Amin Ansari, Fars News Agency · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circle">DE AJEGUNLE AL MUNDO • 204 GOLES • 7 PAÍSES • </textPath></text>
+          </svg>
+          <span class="badge__core">AJ<br>89</span>
+        </div>
+      </figure>
+      <div class="hero__copy">
+        <p class="hero__kicker reveal">Odion Jude Ighalo</p>
+        <h1 class="hero__title"><span class="split">De Ajegunle</span> <span class="split">al mundo.</span></h1>
+        <p class="hero__lead reveal">204 goles con clubes de siete países. Una colección para cada parada.</p>
+        <div class="hero__ctas reveal">
+          <a href="#tienda" class="pill pill--dark">Comprar</a>
+          <a href="#ruta" class="pill pill--dark">Su historia</a>
+        </div>
       </div>
-      <div class="route__progress" aria-hidden="true"><span data-route-bar></span></div>
-      <div class="route__track" data-route-track></div>
+    </section>
+
+    <!-- DESTACADO -->
+    <section class="featured" id="destacado">
+      <h2 class="title-sm">Destacado</h2>
+      <div class="featured__grid">
+        <a class="tile reveal" href="#tienda" data-jump="accesorios">
+          <img src="img/ighalo-hilal-2.jpg" alt="Ighalo con la camiseta azul del Al Hilal" loading="lazy" style="object-position: 85% 30%">
+          <div class="tile__copy">
+            <p>Al Hilal · 2022</p>
+            <h3>24 goles. Pichichi.</h3>
+            <span class="pill pill--light">Comprar</span>
+          </div>
+        </a>
+        <a class="tile reveal" href="#tienda" data-jump="ropa">
+          <img src="img/ighalo-celebracion.jpg" alt="Ighalo celebra con la camiseta amarilla del Watford" loading="lazy" style="object-position: center 25%">
+          <div class="tile__copy">
+            <p>Watford · 2016</p>
+            <h3>15 goles en su primera Premier</h3>
+            <span class="pill pill--light">Comprar</span>
+          </div>
+        </a>
+        <a class="tile reveal" href="#tienda" data-jump="accesorios">
+          <img src="img/ighalo-invierno.jpg" alt="Ighalo calienta con braga y gorro en un día de frío" loading="lazy" style="object-position: 48% center">
+          <div class="tile__copy">
+            <p>Bufanda Naija</p>
+            <h3>Hecho para el frío inglés</h3>
+            <span class="pill pill--light">Comprar</span>
+          </div>
+        </a>
+        <a class="tile reveal" href="#tienda" data-jump="gorras">
+          <img src="img/ighalo-retrato.jpg" alt="Retrato de Ighalo con el dorsal 24 del Watford" loading="lazy" style="object-position: center 20%">
+          <div class="tile__copy">
+            <p>Gorra AJ89</p>
+            <h3>El barrio, bordado en la frente</h3>
+            <span class="pill pill--light">Comprar</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="stats">
+      <div class="stat reveal"><b data-count="204">0</b><span>Goles con clubes</span></div>
+      <div class="stat reveal"><b data-count="473">0</b><span>Partidos</span></div>
+      <div class="stat reveal"><b data-count="16">0</b><span>Goles con Nigeria</span></div>
+      <div class="stat reveal"><b data-count="7">0</b><span>Países</span></div>
+    </section>
+
+    <!-- TIENDA -->
+    <section class="shop" id="tienda">
+      <div class="shop__head">
+        <h2 class="title-sm">Colección AJ89 <span data-shown>(8)</span></h2>
+        <div class="filters">
+          <button class="chip is-active" data-filter="all">Todo</button>
+          <button class="chip" data-filter="gorras">Gorras</button>
+          <button class="chip" data-filter="ropa">Ropa</button>
+          <button class="chip" data-filter="accesorios">Accesorios</button>
+        </div>
+      </div>
+      <div class="products" data-products></div>
+      <p class="shop__empty" data-empty hidden>No hay productos que coincidan con tu búsqueda.</p>
+    </section>
+
+    <!-- RUTA -->
+    <section class="route" id="ruta">
+      <div class="route__sticky">
+        <div class="route__head">
+          <p class="route__eyebrow">La ruta del gol</p>
+          <h2>De Lagos<br>a La Meca.</h2>
+        </div>
+        <div class="route__progress" aria-hidden="true"><span data-route-bar></span></div>
+        <div class="route__track" data-route-track></div>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="outro">
+      <img src="img/ighalo-calentamiento.jpg" alt="Ighalo controla el balón con el pecho durante un calentamiento" loading="lazy">
+      <div class="outro__copy">
+        <h2 class="reveal">Un niño de Ajegunle.</h2>
+        <p class="reveal">En 2020 se bajó el sueldo para jugar en el club de su infancia. Fue el primer nigeriano del Manchester United.</p>
+        <a href="#tienda" class="pill pill--light reveal">Comprar la colección</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="pie">
+    <div class="footer__cols">
+      <div>
+        <h4>Colección</h4>
+        <a href="#tienda" data-jump="gorras">Gorras</a>
+        <a href="#tienda" data-jump="ropa">Ropa</a>
+        <a href="#tienda" data-jump="accesorios">Accesorios</a>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <span>Envío gratis desde 50 €</span>
+        <span>Devoluciones en 30 días</span>
+        <span>Pago seguro</span>
+      </div>
+      <div>
+        <h4>Créditos de las fotos</h4>
+        <span>Franziska Empl · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Odion_Ighalo_24.jpeg" target="_blank" rel="noopener">1</a>, <a href="https://commons.wikimedia.org/wiki/File:160220_Watford_v_Leeds-306_(25146293716).jpg" target="_blank" rel="noopener">2</a>, <a href="https://commons.wikimedia.org/wiki/File:160102_Watford_v_Manchester_City-30_(23526339434).jpg" target="_blank" rel="noopener">3</a>, <a href="https://commons.wikimedia.org/wiki/File:140823_Watford_v_Leeds-269_(15010357326).jpg" target="_blank" rel="noopener">4</a>)</span>
+        <span>Mohammad Amin Ansari, Fars News Agency · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Odion_Ighalo_,_6_February_2022.jpg" target="_blank" rel="noopener">1</a>, <a href="https://commons.wikimedia.org/wiki/File:Odion_Ighalo_2_,_6_February_2022.jpg" target="_blank" rel="noopener">2</a>)</span>
+      </div>
+      <div class="footer__loc">España</div>
     </div>
-  </section>
-
-  <!-- CIERRE -->
-  <section class="outro">
-    <p class="outro__quote reveal">Un niño de Ajegunle con la camiseta de su sueño.</p>
-    <p class="outro__note reveal">En 2020 rebajó su sueldo para llegar cedido al club de su infancia. Fue el primer nigeriano en vestir esa camiseta.</p>
-    <a href="#tienda" class="btn btn--solid magnetic">Llévate la colección</a>
-  </section>
-
-  <footer class="footer">
-    <span>IGH/ALO · Colección AJ89</span>
-    <span>Proyecto conceptual de fans. No es tienda oficial del jugador.</span>
+    <div class="footer__base">
+      <span>© 2026 IGH/ALO · Colección AJ89</span>
+      <span>Proyecto conceptual de fans. No es la tienda oficial del jugador.</span>
+    </div>
   </footer>
 
   <!-- CARRITO -->
   <div class="overlay" data-close-cart></div>
   <aside class="cart" aria-label="Carrito">
     <div class="cart__head">
-      <h3>Tu carrito</h3>
+      <h3>Cesta</h3>
       <button class="cart__close" data-close-cart aria-label="Cerrar">✕</button>
     </div>
     <ul class="cart__items" data-cart-items></ul>
     <div class="cart__foot">
       <div class="cart__total"><span>Total</span><b data-cart-total>0 €</b></div>
-      <button class="btn btn--solid btn--full" data-checkout>Finalizar compra</button>
+      <button class="pill pill--dark pill--full" data-checkout>Pasar por caja</button>
     </div>
   </aside>
 
