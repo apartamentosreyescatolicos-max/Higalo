@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ighalo — De Ajegunle al mundo</title>
+  <meta name="description" content="Odion Jude Ighalo: la colección AJ89 y la ruta de un delantero que marcó en siete países.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo">IGH<span>/</span>ALO</a>
+    <nav class="nav__links">
+      <a href="#tienda">Tienda</a>
+      <a href="#ruta">La ruta</a>
+    </nav>
+    <button class="nav__cart" data-open-cart aria-label="Abrir carrito">
+      Carrito <span class="nav__count" data-cart-count>0</span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <figure class="hero__photo" data-depth="18">
+      <img src="img/ighalo-retrato.jpg" alt="Odion Ighalo con el dorsal 24 del Watford" width="964" height="1118">
+    </figure>
+    <figure class="hero__polaroid" data-depth="-30">
+      <img src="img/ighalo-celebracion.jpg" alt="Ighalo celebra un gol con la camiseta amarilla del Watford" width="600" height="900" loading="lazy">
+      <figcaption>Watford, 2016</figcaption>
+    </figure>
+    <p class="hero__credit">Fotos: Franziska Empl (<a href="https://commons.wikimedia.org/wiki/File:Odion_Ighalo_24.jpeg" target="_blank" rel="noopener">1</a>, <a href="https://commons.wikimedia.org/wiki/File:160220_Watford_v_Leeds-306_(25146293716).jpg" target="_blank" rel="noopener">2</a>) · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></p>
+
+    <p class="hero__kicker reveal">Odion Jude Ighalo · Delantero · Lagos, 1989</p>
+
+    <h1 class="hero__title" data-parallax>
+      <span class="hero__line"><span class="split">IGHA</span></span>
+      <span class="hero__line hero__line--outline"><span class="split">LO</span><em class="hero__ball" aria-hidden="true"></em></span>
+    </h1>
+
+    <div class="hero__bottom">
+      <p class="hero__lead reveal">Nació en Ajegunle, marcó en <strong>siete países</strong> y fue Bota de Oro de África. Esta es su colección.</p>
+      <div class="hero__ctas reveal">
+        <a href="#tienda" class="btn btn--solid magnetic">Ver colección</a>
+        <a href="#ruta" class="btn btn--ghost magnetic">Su historia ↓</a>
+      </div>
+    </div>
+
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+        <text><textPath href="#circle">DE AJEGUNLE AL MUNDO • 204 GOLES • 7 PAÍSES • </textPath></text>
+      </svg>
+      <span class="badge__core">AJ<br>89</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Clubes de su carrera">
+    <div class="marquee__track">
+      <span>Julius Berger</span><i>✦</i><span>Lyn</span><i>✦</i><span>Udinese</span><i>✦</i><span>Granada</span><i>✦</i><span>Watford</span><i>✦</i><span>Changchun Yatai</span><i>✦</i><span>Shanghai Shenhua</span><i>✦</i><span>Manchester United</span><i>✦</i><span>Al Shabab</span><i>✦</i><span>Al Hilal</span><i>✦</i><span>Al-Wehda</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- CIFRAS -->
+  <section class="stats">
+    <div class="stat reveal"><b data-count="204">0</b><span>goles con clubes</span></div>
+    <div class="stat reveal"><b data-count="473">0</b><span>partidos</span></div>
+    <div class="stat reveal"><b data-count="16">0</b><span>goles con Nigeria</span></div>
+    <div class="stat reveal"><b data-count="7">0</b><span>países, una camiseta por cada uno</span></div>
+  </section>
+
+  <!-- TIENDA -->
+  <section class="shop" id="tienda">
+    <div class="section-head">
+      <p class="eyebrow">Colección AJ89</p>
+      <h2 class="reveal">Viste la ruta.</h2>
+      <p class="section-head__sub reveal">Cada pieza lleva una parada de su carrera. Elige color y talla.</p>
+    </div>
+
+    <div class="filters" role="tablist">
+      <button class="chip is-active" data-filter="all">Todo</button>
+      <button class="chip" data-filter="gorras">Gorras</button>
+      <button class="chip" data-filter="ropa">Ropa</button>
+      <button class="chip" data-filter="accesorios">Accesorios</button>
+    </div>
+
+    <div class="products" data-products></div>
+  </section>
+
+  <!-- RUTA -->
+  <section class="route" id="ruta">
+    <div class="route__sticky">
+      <div class="route__head">
+        <p class="eyebrow">La ruta del gol</p>
+        <h2>De Ajegunle<br>al mundo.</h2>
+      </div>
+      <div class="route__progress" aria-hidden="true"><span data-route-bar></span></div>
+      <div class="route__track" data-route-track></div>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="outro">
+    <p class="outro__quote reveal">Un niño de Ajegunle con la camiseta de su sueño.</p>
+    <p class="outro__note reveal">En 2020 rebajó su sueldo para llegar cedido al club de su infancia. Fue el primer nigeriano en vestir esa camiseta.</p>
+    <a href="#tienda" class="btn btn--solid magnetic">Llévate la colección</a>
+  </section>
+
+  <footer class="footer">
+    <span>IGH/ALO · Colección AJ89</span>
+    <span>Proyecto conceptual de fans. No es tienda oficial del jugador.</span>
+  </footer>
+
+  <!-- CARRITO -->
+  <div class="overlay" data-close-cart></div>
+  <aside class="cart" aria-label="Carrito">
+    <div class="cart__head">
+      <h3>Tu carrito</h3>
+      <button class="cart__close" data-close-cart aria-label="Cerrar">✕</button>
+    </div>
+    <ul class="cart__items" data-cart-items></ul>
+    <div class="cart__foot">
+      <div class="cart__total"><span>Total</span><b data-cart-total>0 €</b></div>
+      <button class="btn btn--solid btn--full" data-checkout>Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div class="toast" data-toast></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
